@@ -36,8 +36,8 @@ header {
 
 #sign-in {
     /* position: relative; */
-    /* left: -900px;
-    top: -540px; */
+    left: -960px;
+    top: -600px;
     /* box-sizing: border-box;
     padding-left: 60px; */
     background-color: rgb(255, 0, 166);
@@ -50,8 +50,8 @@ header {
 
 #seller {
     /* position: relative; */
-    /* left: -900px;
-    top: -540px; */
+    left: -960px;
+    top: -650px;
     border-style: none;
     padding: 20px;
     border-radius: 10px;
@@ -59,28 +59,29 @@ header {
 }
 
 #snapfood-logo {
-    direction: rtl;
     height: 70px;
+    position: absolute;
     /* position: relative; */
-    top: -600px;
-    left: 990px;
+    top: 20px;
+    right: 20px;
 }
 
 #ordering {
     font-size: 50px;
     /* position: relative; */
-    left: 850px;
-    top: -480px;
+    position: absolute;
+    right: 20px;
+    top: 100px;
 }
 
 #search-box {
     border-style: none;
     height: 60px;
-    width: 400px;
+    width: 365px;
     border-radius: 30px;
-    /* position: relative; */
-    left: 750px;
-    top: -450px;
+    position: absolute;
+    right: 20px;
+    top: 260px;
     background-color: rgb(247, 247, 247);
     direction: rtl;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -94,9 +95,11 @@ header {
     height: 50px; 
     width: 50px; 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* position: relative; */
-    top: -450px;
-    left: 350px;
+    position: absolute;
+    top: 265px;
+    right: 327px;
+    /* top: -450px;
+    left: 350px; */
     cursor: pointer;
 }
 
@@ -369,4 +372,14 @@ header {
 
 #col4 {
     flex-grow: 1;
+}
+
+@media only screen and (max-width: 500px) {
+    .row .col {
+        width: 20%;
+    }
+    .row-2 .col-2 {
+        width: 100%;
+    }
+
 }
