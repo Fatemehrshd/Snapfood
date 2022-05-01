@@ -1,7 +1,18 @@
 body {
     margin: 20px;
 }
+
+figure figcaption {
+    text-align: center;
+}
+
+figure a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
+    padding: 20px;
     background-image: url("images/snap.png");
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -11,6 +22,8 @@ header {
     background-color: rgb(222, 222, 222);
     box-sizing: border-box;
     border-bottom-right-radius: 200px;
+    position: relative;
+    z-index: -1;
 }
 
 /* #pizza {
@@ -22,20 +35,23 @@ header {
 } */
 
 #sign-in {
-    position: relative;
-    left: -900px;
-    top: -540px;
+    /* position: relative; */
+    /* left: -900px;
+    top: -540px; */
+    /* box-sizing: border-box;
+    padding-left: 60px; */
     background-color: rgb(255, 0, 166);
     border-radius: 10px;
     border-style: none;
     padding: 20px;
     cursor: pointer;
+    
 }
 
 #seller {
-    position: relative;
-    left: -900px;
-    top: -540px;
+    /* position: relative; */
+    /* left: -900px;
+    top: -540px; */
     border-style: none;
     padding: 20px;
     border-radius: 10px;
@@ -43,15 +59,16 @@ header {
 }
 
 #snapfood-logo {
+    direction: rtl;
     height: 70px;
-    position: relative;
+    /* position: relative; */
     top: -600px;
     left: 990px;
 }
 
 #ordering {
     font-size: 50px;
-    position: relative;
+    /* position: relative; */
     left: 850px;
     top: -480px;
 }
@@ -61,7 +78,7 @@ header {
     height: 60px;
     width: 400px;
     border-radius: 30px;
-    position: relative;
+    /* position: relative; */
     left: 750px;
     top: -450px;
     background-color: rgb(247, 247, 247);
@@ -77,7 +94,7 @@ header {
     height: 50px; 
     width: 50px; 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative;
+    /* position: relative; */
     top: -450px;
     left: 350px;
     cursor: pointer;
@@ -109,4 +126,247 @@ header {
     width: 40px;
     height: 40px;
     text-align: center;
+}
+
+#categories {
+    position: relative;
+    left: 2%;
+    top: 200px;
+}
+
+.row-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    background-color: white;
+    position: relative;
+    top: -177px;
+    right: 7%;
+}
+
+.row-2 .col-2 {
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.row-2 .col-2 img {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+}
+
+.row-2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.row-2 p a:hover{
+    font-size: 20px;
+    color: rgb(255, 0, 166);
+    transition: color 0.7s;
+}
+
+/* .food:hover {
+} */
+
+.row-3 {
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    background-color: rgb(222, 222, 222);
+    box-sizing: border-box;
+    border-bottom-right-radius: 160px;
+    position: relative;
+    top: 150px;
+    z-index: -1;
+}
+
+.row-3 .col-3 {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.row-3 h1, p{
+    direction: rtl;
+}
+
+#number {
+    border-style: none;
+    width: 340px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#link {
+    padding: 9px;
+    height: 35px;
+    background-color: rgb(255, 0, 166);
+    cursor: pointer;
+    color: white;
+    border-style: none;
+    border-radius: 8px;
+    position: relative;
+    left: 14.5%;
+
+}
+
+.sub-row {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sub-col {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.sub-col p{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    height: 20px;
+    position: relative;
+}
+
+
+#shop {
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    direction: rtl;
+    flex-wrap: wrap;
+    /* position: static; */
+    top: 300px;
+    box-sizing: border-box;
+}
+
+#owner {
+    padding: 30px;
+    padding-top: 60px;
+    flex-grow: 1;
+}
+
+#shop h1, p {
+    direction: rtl;
+}
+
+#shop-center {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    top: -120px;
+    flex-grow: 2;
+}
+
+#owner-button {
+    background-color: rgb(255, 0, 166);
+    color: white;
+    padding: 20px;
+    border-style: none;
+    border-radius: 8px;
+    width: 200px;
+    position: static;
+    font-size: 20px;
+}
+
+.row-4 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.row-4 .col-4 {
+    width: 10%;
+    box-sizing: border-box;
+    padding: 2px;
+    color: lightgray;
+}
+
+#cities {
+    background-color: white;
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-bottom: 150px;
+}
+
+#footer {
+    background-color: rgb(222, 222, 222);
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#col1 {
+    flex-grow: 1;
+}
+
+#col2 {
+    flex-grow: 3;
+}
+
+.roww {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 7px;
+}
+
+.coll {
+    padding: 8px;
+}
+
+.roww .coll button {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-style: none;
+    border-radius: 100%;
+    background-color: lightgray;
+}
+
+
+#col3 {
+    flex-grow: 2;
+}
+
+.rowww {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.colll {
+    padding: 5px;
+    direction: rtl;
+    text-align: right;
+}
+
+.colll a {
+    text-decoration: none;
+    color: gray;
+}
+
+#col4 {
+    flex-grow: 1;
 }
